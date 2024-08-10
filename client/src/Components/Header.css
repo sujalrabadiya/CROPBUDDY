@@ -1,0 +1,67 @@
+/* Add your custom styles here */
+header {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand img {
+    max-width: 150px; /* Adjust logo size */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Customize button color */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,...'); /* Customize toggle icon */
+  }
+  
+  .nav-link {
+    color: #333; /* Customize text color */
+    font-weight: 500; /* Customize font weight */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Customize hover text color */
+  }
+  
+  .nav-dropdown-menu {
+    background-color: #fff; /* Customize dropdown background */
+    border-radius: 0.25rem; /* Customize border radius */
+  }
+  
+  .nav-dropdown-item {
+    color: #333; /* Customize dropdown item color */
+  }
+  
+  .nav-dropdown-item:hover {
+    background-color: #f1f1f1; /* Customize hover background color */
+  }
+  
+  button {
+    background-color: #007bff; /* Customize button color */
+    border: none; /* Remove default border */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Customize hover color */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* Add border to search bar */
+    padding-right: 0.5rem;
+  }
+  
+  .search-bar input {
+    border: none; /* Remove default border */
+    box-shadow: none; /* Remove default shadow */
+  }
+  
+  .search-bar button {
+    border: none; /* Remove default border */
+    background-color: transparent; /* Customize button color */
+  }
+  

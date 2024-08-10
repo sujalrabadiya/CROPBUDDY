@@ -1,0 +1,104 @@
+/* Home Section */
+#billboard {
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+    color: #333; /* Darker text for better contrast */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container and Row */
+.container {
+    position: relative;
+}
+
+/* Icon Boxes */
+.icon-box {
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    background: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+}
+
+/* Icon Number */
+.icon-number {
+    background-color: green; /* Primary color for the icon number background */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.icon-number:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Icon Content */
+.icon-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222; /* Darker text for better readability */
+}
+
+/* Image Holder */
+.image-holder img {
+    max-width: 100%;
+    border-radius: 15px; /* Rounded corners for the image */
+}
+
+/* Pattern Overlays */
+.pattern-overlay, .pattern-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15; /* Lightly transparent pattern overlay */
+    pointer-events: none; /* Ensure it does not interfere with clicks */
+}
+
+.pattern-overlay img, .pattern-overlay1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cover the container without distortion */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icon-box {
+        padding: 1rem;
+    }
+
+    .icon-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .box-title {
+        font-size: 1.25rem;
+    }
+}
