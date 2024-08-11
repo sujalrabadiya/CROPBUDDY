@@ -1,0 +1,23 @@
+/* TipsResources.css */
+
+.tips-resources-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .tip-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+  }
+  
+  .tip-header {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tip-content {
+    font-size: 1rem;
+  }
+  

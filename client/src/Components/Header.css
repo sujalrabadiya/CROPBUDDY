@@ -1,67 +1,97 @@
-/* Add your custom styles here */
-header {
-    background-color: #f8f9fa; /* Light grey background */
-    padding: 0.5rem 1rem;
-  }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-brand .fa-leaf {
+  color: #28a745; /* Main brand color */
+}
+
+.navbar-brand span {
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28a745; /* Hover color */
+}
+
+.navbar-nav .nav-link.active {
+  color: #28a745; /* Active link color */
+  font-weight: 700;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  font-size: 1.25rem;
+}
+
+.d-flex .fa {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.d-flex .fa:hover {
+  color: #28a745; /* Hover color for icons */
+}
+
+.d-flex a {
+  text-decoration: none;
+}
+
+.d-flex .fa-bell {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.d-flex .fa-user {
+  font-size: 1.25rem;
+  color: green;
   
-  .navbar-brand img {
-    max-width: 150px; /* Adjust logo size */
+}
+
+.d-flex .fa-tint {
+  font-size: 1.25rem;
+  color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin-top: 10px;
   }
-  
-  .navbar-toggler {
-    border: none; /* Remove default border */
-    background-color: #007bff; /* Customize button color */
+
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-  .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,...'); /* Customize toggle icon */
-  }
-  
-  .nav-link {
-    color: #333; /* Customize text color */
-    font-weight: 500; /* Customize font weight */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* Customize hover text color */
-  }
-  
-  .nav-dropdown-menu {
-    background-color: #fff; /* Customize dropdown background */
-    border-radius: 0.25rem; /* Customize border radius */
-  }
-  
-  .nav-dropdown-item {
-    color: #333; /* Customize dropdown item color */
-  }
-  
-  .nav-dropdown-item:hover {
-    background-color: #f1f1f1; /* Customize hover background color */
-  }
-  
-  button {
-    background-color: #007bff; /* Customize button color */
-    border: none; /* Remove default border */
-  }
-  
-  button:hover {
-    background-color: #0056b3; /* Customize hover color */
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd; /* Add border to search bar */
-    padding-right: 0.5rem;
-  }
-  
-  .search-bar input {
-    border: none; /* Remove default border */
-    box-shadow: none; /* Remove default shadow */
-  }
-  
-  .search-bar button {
-    border: none; /* Remove default border */
-    background-color: transparent; /* Customize button color */
-  }
-  
+}

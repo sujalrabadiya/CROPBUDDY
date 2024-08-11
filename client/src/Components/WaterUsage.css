@@ -1,0 +1,25 @@
+/* WaterUsage.css */
+
+.water-usage-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .water-usage-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .water-usage-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .water-usage-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  

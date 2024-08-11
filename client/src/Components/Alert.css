@@ -1,0 +1,24 @@
+/* Alerts.css */
+
+.alert-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alert-item {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .alert-header {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .alert-message {
+    font-size: 1rem;
+  }
+  

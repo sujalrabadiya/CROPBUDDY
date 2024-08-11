@@ -1,38 +1,129 @@
-.App {
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  padding: 0;
+  background: #f0f4f8; /* Light grayish-blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mt-4 {
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mb-4 {
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-4 {
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Styles */
+header {
+  background: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1rem 2rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .navbar-brand {
+  font-size: 1.75rem;
+  color: green; /* Primary color */
+  
+}
+
+header .navbar-nav .nav-link {
+  color: #333;
+  padding: 0.75rem 1rem;
+  
+}
+
+header .navbar-nav .nav-link:hover {
+  color: green;
+  
+}
+
+
+
+
+
+/* Main Content Styles */
+main {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
+  color: #007bff; /* Primary color */
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: green;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Forms */
+.form-control {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.input-group .form-control {
+  border-radius: 20px 0 0 20px;
+}
+
+.input-group-append .btn {
+  border-radius: 0 20px 20px 0;
+  margin-left: -1px;
+}
+
+/* Footer Styles */
+footer {
+  background: #ffffff;
+  border-top: 2px solid #e0e0e0;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #333;
 }

@@ -1,104 +1,123 @@
-/* Home Section */
-#billboard {
-    position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
-    color: #333; /* Darker text for better contrast */
-    overflow: hidden;
-    position: relative;
+/* Home.css */
+
+/* Base Colors */
+:root {
+  --primary-color: #4CAF50; /* Rich Green */
+  --secondary-color: #2E7D32; /* Darker Green */
+  --accent-color: #FFEB3B; /* Bright Yellow */
+  --background-color: #F5F5F5; /* Light Gray */
+  --text-color: #212121; /* Dark Gray */
+  --card-background: #FFFFFF; /* White */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
 }
 
-/* Container and Row */
-.container {
-    position: relative;
+/* Hero Section */
+#hero {
+  background: var(--background-color);
+  padding: 50px 0;
 }
 
-/* Icon Boxes */
-.icon-box {
-    background: rgba(255, 255, 255, 0.85); 
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, background 0.3s ease;
-    margin-bottom: 1.5rem;
+.hero-content {
+  text-align: left;
+  color: var(--text-color);
 }
 
-.icon-box:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-    background: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0; /* Removed top and bottom margin */
+  font-weight: 700;
 }
 
-/* Icon Number */
-.icon-number {
-    background-color: green; /* Primary color for the icon number background */
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    color: #fff;
-    margin-right: 1rem;
-    transition: background-color 0.3s ease;
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0; /* Removed top and bottom margin */
 }
 
-.icon-number:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Icon Content */
-.icon-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.btn-primary:hover {
+  background-color: var(--secondary-color);
 }
 
-.box-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #222; /* Darker text for better readability */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-/* Image Holder */
-.image-holder img {
-    max-width: 100%;
-    border-radius: 15px; /* Rounded corners for the image */
+/* Features Section */
+#features {
+  padding: 50px 0;
+  background-color: #F1F8E9; /* Very Light Green */
 }
 
-/* Pattern Overlays */
-.pattern-overlay, .pattern-overlay1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.15; /* Lightly transparent pattern overlay */
-    pointer-events: none; /* Ensure it does not interfere with clicks */
+.feature-box {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--card-background);
+  box-shadow: 0 6px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0; /* Removed top and bottom margin */
 }
 
-.pattern-overlay img, .pattern-overlay1 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Cover the container without distortion */
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .icon-box {
-        padding: 1rem;
-    }
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px auto; /* Removed top margin */
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
 
-    .icon-number {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
+.feature-title {
+  font-size: 1.6rem;
+  margin: 0; /* Removed top and bottom margin */
+  color: var(--primary-color);
+}
 
-    .box-title {
-        font-size: 1.25rem;
-    }
+/* Testimonials Section */
+#testimonials {
+  padding: 50px 0;
+  background-color: var(--background-color);
+}
+
+.testimonial-box {
+  background: var(--card-background);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  text-align: center;
+  color: var(--text-color);
+  font-style: italic;
+  margin: 0; /* Removed top and bottom margin */
+}
+
+.testimonial-box h4 {
+  margin: 0; /* Removed top and bottom margin */
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.testimonial-box p {
+  font-size: 1rem;
+  margin: 0; /* Removed top and bottom margin */
 }

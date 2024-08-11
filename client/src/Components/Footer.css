@@ -1,0 +1,63 @@
+/* Footer.css */
+
+/* Base Colors */
+:root {
+    --footer-background: White; /* Darker Green */
+    --footer-text: black; /* White */
+    --footer-link: Green; /* Bright Yellow */
+    --footer-link-hover: #AEEA00; /* Lighter Yellow */
+  }
+  
+  /* Footer Styles */
+  #footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+    padding: 40px 0;
+  }
+  
+  .footer-title {
+    font-size: 1.6rem;
+    color: var(--footer-link);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--footer-link-hover);
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    color: var(--footer-text);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: var(--footer-link-hover);
+  }
+  
+  .text-center p {
+    margin-top: 20px;
+    color: var(--footer-text);
+  }
+  
