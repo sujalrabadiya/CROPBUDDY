@@ -24,7 +24,7 @@ app.use("/api/form", contactRoute);
 app.use("/api/admin", adminRoute);
 
 app.use("/api/auth", authRoute);
-app.use("/api/owner", userRoute);
+app.use("/api/user", userRoute);
 
 
 const PORT = 3030;

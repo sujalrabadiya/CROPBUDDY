@@ -116,5 +116,71 @@ const deleteAlertById = async (req, res) => {
     }
 };
 
+//tips
+const getAllTip = async (req, res) => {
+    try {
+        const tip = await Tip.find({userId: req.user.id});
+        if(tip.length === 0) {
+            return res.status(404).json({message: "No Tip Found"});
+        }
+        return res.status(200).json(tip);
+    } catch (error) {
+        console.log(error);
+        res.status(400).json({msg: "page not found"});
+    }
+}
 
-module.exports = { getAllUsers, getUserById, deleteUserById, updateUserById, getAllContacts, deleteContactById };
+const getTipById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const tip = await Tip.findOne({_id: id});
+        res.status(200).json(tip);
+    } catch (error) {
+        res.status(400).json({msg: "page not found"});
+    }
+}
+
+const insertTip = async (req, res) => {
+    try {
+        const data = req.body;
+
+        const tipCreated = await Tip.create(data);
+
+        res
+        .status(201).json({
+            message: "Tip Insertion Successfull",
+            tipId: tipCreated._id.toString()
+        });
+        
+    } catch (error) {
+        console.log(error);
+        res.status(400).json({msg:"page not found"})
+    }
+
+};
+
+const updateTipById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const updates = req.body;
+        const updatedData = await Tip.updateOne(
+            {_id: id},
+            {$set: updates},
+            );
+        res.status(200).json(updatedData);
+    } catch (error) {
+        res.status(400).json({msg: "page not found"});
+    }
+}
+
+const deleteTipById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        await Tip.deleteOne({_id: id});
+        return res.status(200).json({message: "Tip Deleted Successfully"});
+    } catch (error) {
+        res.status(400).json({msg: "page not found"});
+    }
+};
+
+module.exports = { getAllUsers, getUserById, deleteUserById, updateUserById, getAllContacts, deleteContactById, insertAlert, updateAlertById, deleteAlertById, getAllTip, getTipById, deleteTipById, updateTipById, insertTip };
