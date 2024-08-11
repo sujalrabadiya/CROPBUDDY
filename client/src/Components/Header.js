@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faBell, faUser, faTint } from '@fortawesome/free-solid-svg-icons'; // Example icons
 import 'bootstrap/dist/css/bootstrap.min.css'; 
@@ -20,7 +20,6 @@ const Header = () => {
           <Nav.Link href="/soil-moisture-monitoring">Soil Monitoring</Nav.Link>
           <Nav.Link href="/weather-forecast">Weather Forecast</Nav.Link>
           <Nav.Link href="/tips-resources">Tips & Resources</Nav.Link>
-          
         </Nav>
         
         <div className="d-flex align-items-center ms-3">
@@ -30,9 +29,11 @@ const Header = () => {
           <a href="/user-profile" className="me-3">
             <FontAwesomeIcon icon={faUser} size="lg" />
           </a>
-          <a href="/water-usage">
+          <a href="/water-usage" className="me-3">
             <FontAwesomeIcon icon={faTint} size="lg" />
           </a>
+          <Nav.Link href="/login" className="btn btn-outline-primary ms-2">Login</Nav.Link>
+          <Nav.Link href="/signup" className="btn btn-primary ms-2">Sign Up</Nav.Link>
         </div>
       </Navbar.Collapse>
     </Navbar>

@@ -4,14 +4,17 @@ import './index.css'; // Ensure this file exists for custom styles
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import reportWebVitals from './reportWebVitals';
+import { AuthProvider } from './auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   
+  <AuthProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+ </AuthProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
