@@ -27,7 +27,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
 
 
-const PORT = 3030;
+const PORT = 10000;
 
 app.use(errorMiddleware);
 
