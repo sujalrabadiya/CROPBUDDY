@@ -11,7 +11,7 @@ const userRoute = require("./routes/user-router");
 const adminRoute = require("./routes/admin-router");
 
 const corsOptions = {
-    origin: "0.0.0.0",
+    origin: "http://localhost:3000",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 }
